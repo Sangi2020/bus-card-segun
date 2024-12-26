@@ -18,7 +18,7 @@ const BusinessCard = () => {
         await navigator.share({
           title: "Business Card",
           text: "Check out this business card!",
-          url: "https://bus-card-web-wynn.vercel.app/",
+          url: "https://bus-card-segun.vercel.app/",
         });
         console.log("Content shared successfully!");
       } else {

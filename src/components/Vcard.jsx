@@ -138,7 +138,7 @@ END:VCARD
         }`}
       >
         <div
-          className={`w-[90%] sm:w-[400px] h-full flex justify-center items-center max-w-[400px] bg-white text-black rounded-3xl shadow-lg overflow-hidden p-6 relative transform transition-transform duration-300 ${
+          className={`w-[100%]  h-full flex justify-center items-center max-w-[400px] bg-white text-black rounded-3xl shadow-lg overflow-hidden p-6 relative transform transition-transform duration-300 ${
             isModalOpen ? "scale-100" : "scale-50"
           }`}
         >

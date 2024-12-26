@@ -58,34 +58,23 @@ const BusinessCard = () => {
 
         {/* Save Contact Button */}
         <div className="mt-6 w-full px-2 ">
-          <button
-            className="w-full bg-green-500 hover:bg-stone-200 text-white hover:text-black transition-all font-medium py-2 rounded-xl flex items-center justify-center gap-2 duration-300 ease-in-out"
-            onClick={() => {
-              const vCardData = `
-BEGIN:VCARD
-VERSION:3.0
-N: Eyitayo;Segun;;;
-FN: Eyitayo Segun
-ORG:Gamaal
-TITLE:Brand Strategist Senior Manager
-TEL;type=WORK,VOICE:+2347055829311
-EMAIL;type=WORK:info@seguneyitayo.com
-URL:https://seguneyitayo.com
-ADR:;;Lagos, Lagos State, Nigeria;;
-END:VCARD
-              `;
-              const blob = new Blob([vCardData], { type: "text/vcard" });
-              const link = document.createElement("a");
-              link.href = URL.createObjectURL(blob);
-              link.download = " Eyitayo L Segun.vcf";
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
-            }}
-          >
-            <BiSolidContact className="text-xl" />
-            Save Contact
-          </button>
+          
+<button
+  className="w-full bg-green-500 hover:bg-stone-200 text-white hover:text-black transition-all font-medium py-2 rounded-xl flex items-center justify-center gap-2 duration-300 ease-in-out"
+  onClick={() => {
+    const vCardData = `BEGIN:VCARD\r\nVERSION:3.0\r\nN:Eyitayo;Segun;;;\r\nFN:Eyitayo Segun\r\nORG:Gamaal\r\nTITLE:Brand Strategist Senior Manager\r\nTEL;TYPE=WORK,VOICE:+2347055829311\r\nEMAIL;TYPE=WORK:info@seguneyitayo.com\r\nURL:https://seguneyitayo.com\r\nADR:;;Lagos, Lagos State, Nigeria;;;\r\nEND:VCARD`;
+    const blob = new Blob([vCardData], { type: "text/vcard" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "Eyitayo_L_Segun.vcf"; // Ensure no spaces in filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }}
+>
+  <BiSolidContact className="text-xl" />
+  Save Contact
+</button>
         </div>
        <div className="mt-6 flex justify-center md:px-8 px-2 items-center flex-wrap md:gap-6 gap-2 text-center">
   <a

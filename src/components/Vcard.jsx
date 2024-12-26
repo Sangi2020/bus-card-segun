@@ -52,7 +52,7 @@ const BusinessCard = () => {
           <h1 className="text-2xl font-bold mt-4">  Eyitayo L. Segun
            </h1>
           <p className="text-sm text-gray-400">Brand Strategist Senior Manager </p>
-          <p className="text-sm mt-1">@ Gamaal</p>
+          <p className="text-sm mt-1"> Gamaal</p>
           <p className="text-xs mt-1">Lagos, Lagos State, Nigeria </p>
         </div>
 

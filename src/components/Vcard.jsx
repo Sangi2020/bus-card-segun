@@ -31,7 +31,7 @@ const BusinessCard = () => {
   return (
     <>
       {/* Business Card */}
-      <div className="md:w-[100%]  font-sans w-full relative sm:w-[80%] max-w-[500px] z-40 bg-white text-black rounded-3xl shadow-lg overflow-hidden md:py-6  p-4  flex flex-col items-center justify-center">
+      <div className="md:w-[100%]  font-sans w-full relative sm:w-[600px] max-w-[600px] z-40 bg-white text-black rounded-3xl shadow-lg overflow-hidden md:py-6  p-4  flex flex-col items-center justify-center">
         {/* Header */}
         <div className="absolute top-6 right-6 flex gap-6 ">
         <FaShareAlt

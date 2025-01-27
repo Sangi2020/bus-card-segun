@@ -51,18 +51,18 @@ const BusinessCard = () => {
           />
           <h1 className="text-2xl font-bold mt-4">  Eyitayo L. Segun
            </h1>
-          <p className="text-sm text-gray-400">Brand Strategist Senior Manager </p>
-          <p className="text-sm mt-1"> Gamaal</p>
-          <p className="text-xs mt-1">Lagos, Lagos State, Nigeria </p>
+          <p className="text-sm text-gray-400">Rigional Marketing Manager </p>
+          <p className="text-sm mt-1"> TL Technologies</p>
+          <p className="text-xs mt-1">Thiruvananthapuram, Kerala , India </p>
         </div>
 
         {/* Save Contact Button */}
         <div className="mt-6 w-full px-2 ">
           
 <button
-  className="w-full bg-green-500 hover:bg-stone-200 text-white hover:text-black transition-all font-medium py-2 rounded-xl flex items-center justify-center gap-2 duration-300 ease-in-out"
+  className="w-full bg-red-500 hover:bg-stone-200 text-white hover:text-black transition-all font-medium py-2 rounded-xl flex items-center justify-center gap-2 duration-300 ease-in-out"
   onClick={() => {
-    const vCardData = `BEGIN:VCARD\r\nVERSION:3.0\r\nN:Eyitayo;Segun;;;\r\nFN:Eyitayo Segun\r\nORG:Gamaal\r\nTITLE:Brand Strategist Senior Manager\r\nTEL;TYPE=WORK,VOICE:+2347055829311\r\nEMAIL;TYPE=WORK:info@seguneyitayo.com\r\nURL:https://seguneyitayo.com\r\nADR:;;Lagos, Lagos State, Nigeria;;;\r\nEND:VCARD`;
+    const vCardData = `BEGIN:VCARD\r\nVERSION:3.0\r\nN:Eyitayo;Segun;;;\r\nFN:Eyitayo Segun\r\nORG:Gamaal\r\nTITLE:Brand Strategist Senior Manager\r\nTEL;TYPE=WORK,VOICE:+2347055829311\r\nEMAIL;TYPE=WORK:info@seguneyitayo.com\r\nURL:https://www.tltechnologies.net/\r\nADR:;;Lagos, Lagos State, Nigeria;;;\r\nEND:VCARD`;
     const blob = new Blob([vCardData], { type: "text/vcard" });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
@@ -81,21 +81,21 @@ const BusinessCard = () => {
     href="tel:+2347055829311" // Replace with your office phone number
     className="w-fit h-fit bg-white/40 p-1 px-2 bg-opacity-25 rounded-full flex justify-center items-center gap-1"
   >
-    <FaPhoneAlt className="text-green-400 text-xl" />
+    <FaPhoneAlt className="text-blue-400 text-xl" />
   </a>
   <a
-    href="https://seguneyitayo.com/" // Replace with your website URL
+    href="https://www.tltechnologies.net//" // Replace with your website URL
     target="_blank"
     rel="noopener noreferrer"
     className="w-fit h-fit bg-white/40 p-1 px-2 bg-opacity-25 rounded-full flex justify-center items-center gap-1"
   >
-    <FaGlobe className="text-green-400 text-xl" />
+    <FaGlobe className="text-blue-800 text-xl" />
   </a>
   <a
     href="mailto:info@seguneyitayo.com" // Replace with your email address
     className="w-fit h-fit bg-white/40 p-1 px-2 bg-opacity-25 rounded-full flex justify-center items-center gap-1"
   >
-    <MdEmail className="text-green-400 text-xl" />
+    <MdEmail className="text-red-800 text-xl" />
   </a>
   <a
     href="https://g.co/kgs/T4wkBzv" // Replace with your location URL
@@ -103,7 +103,7 @@ const BusinessCard = () => {
     rel="noopener noreferrer"
     className="w-fit h-fit bg-white/40 p-1 px-2 bg-opacity-25 rounded-full flex justify-center items-center gap-1"
   >
-    <FaLocationDot className="text-green-400 text-xl" />
+    <FaLocationDot className="text-red-500 text-xl" />
   </a>
   <a
     href="https://wa.me/+2347055829311" // Replace with your WhatsApp number
@@ -111,7 +111,7 @@ const BusinessCard = () => {
     rel="noopener noreferrer"
     className="w-fit h-fit bg-white/40 p-1 px-2 bg-opacity-25 rounded-full flex justify-center items-center gap-1"
   >
-    <FaWhatsapp className="text-green-400 text-xl" />
+    <FaWhatsapp className="text-green-600 text-xl" />
   </a>
 </div>
 

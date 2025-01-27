@@ -62,7 +62,7 @@ const BusinessCard = () => {
 <button
   className="w-full bg-red-500 hover:bg-stone-200 text-white hover:text-black transition-all font-medium py-2 rounded-xl flex items-center justify-center gap-2 duration-300 ease-in-out"
   onClick={() => {
-    const vCardData = `BEGIN:VCARD\r\nVERSION:3.0\r\nN:Eyitayo;Segun;;;\r\nFN:Eyitayo Segun\r\nORG:Gamaal\r\nTITLE:Brand Strategist Senior Manager\r\nTEL;TYPE=WORK,VOICE:+2347055829311\r\nEMAIL;TYPE=WORK:info@tltechnologies.net\r\nURL:https://www.tltechnologies.net/\r\nADR:;;Lagos, Lagos State, Nigeria;;;\r\nEND:VCARD`;
+    const vCardData = `BEGIN:VCARD\r\nVERSION:3.0\r\nN:Eyitayo;Segun;;;\r\nFN:Eyitayo Segun\r\nORG:TL Technologies\r\nTITLE:Regional Marketing Manager\r\nTEL;TYPE=WORK,VOICE:+2347055829311\r\nEMAIL;TYPE=WORK:info@tltechnologies.net\r\nURL:https://www.tltechnologies.net/\r\nADR:;;Lagos, Lagos State, Nigeria;;;\r\nEND:VCARD`;
     const blob = new Blob([vCardData], { type: "text/vcard" });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
